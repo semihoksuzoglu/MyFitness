@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgorund2">
+
+
+    <Button
+        android:id="@+id/kiloalma"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="181dp"
+        android:background="#990F8291"
+        android:onClick="kiloVerme"
+        android:text="KİLO VERME"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/kiloverme"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="302dp"
+        android:background="#99FFEB3B"
+        android:onClick="kiloAlma"
+        android:text="KİLO ALMA"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/kilosabit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="425dp"
+        android:background="#99FF5722"
+        android:onClick="kiloKoruma"
+        android:text="KİLO KORUMA"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp" />
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/isimSoyisimText"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#99D34848"
+        android:drawableLeft="@drawable/ic_action_person"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="   İsim Soyisim"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/dogumTarihiTxt"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/isimSoyisimText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#99DF3000"
+        android:drawableLeft="@drawable/ic_action_date"
+        android:ems="10"
+        android:hint="   Doğum Tarihi"
+        android:inputType="date"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/kiloTxt"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/dogumTarihiTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#99CFCF20"
+        android:drawableLeft="@drawable/weihticon"
+        android:ems="10"
+        android:hint="   Kilo"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/boyTxt"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/kiloTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#993EA507"
+        android:drawableLeft="@drawable/ic_action_size"
+        android:ems="10"
+        android:hint="   Boy"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/emailTxt"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/boyTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#990C9A87"
+        android:drawableLeft="@drawable/ic_action_user2"
+        android:ems="10"
+        android:hint="   E-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/sifreTxt"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/emailTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#990C329A"
+        android:drawableLeft="@drawable/ic_action_pass2"
+        android:ems="10"
+        android:hint="   Şifre"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/sifreTekrarTxt"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/sifreTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#990C329A"
+        android:drawableLeft="@drawable/ic_action_pass2"
+        android:ems="10"
+        android:hint="   Şifre Tekrar"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sifreTekrarTxt">
+
+        <Button
+            android:id="@+id/KayitOlBtn"
+            android:layout_width="153dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="#CC52B11B"
+            android:elevation="10dp"
+            android:onClick="KayitOlClicked"
+            android:text="Kayıt Ol"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/YaDaTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/KayitOlBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="ya da"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/GirisYapBtn"
+            android:layout_width="153dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/YaDaTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="#CCA51B30"
+            android:elevation="10dp"
+            android:onClick="girisYap"
+            android:text="Giriş Yap"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/nav_sport"
+    android:icon="@drawable/haltericon"
+    android:title="Antrenman"
+    />
+<item
+    android:id="@+id/nav_water"
+    android:icon="@drawable/watericon"
+    android:title="Su Tüketimi"
+    />
+<item
+    android:id="@+id/nav_kcal"
+    android:icon="@drawable/kcalicon"
+    android:title="Kalori Tüketimi"
+    />
+<item
+    android:id="@+id/nav_profile"
+    android:icon="@drawable/profileicon"
+    android:title="Profil"
+    />
+</menu>

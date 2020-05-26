@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyFitness2</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="Hedefler">
+        <item>Kilo Vermek</item>
+        <item>Kilo Almak</item>
+        <item>Kilo Korumak</item>
+    </string-array>
+
+    <string name="gun1">PAZARTESİ</string>
+    <string name="gun2">SALI</string>
+    <string name="gun3">ÇARŞAMBA</string>
+    <string name="gun4">PERŞEMBE</string>
+    <string name="gun5">CUMA</string>
+    <string name="gun6">CUMARTESİ</string>
+    <string name="gun7">PAZAR</string>
+    <string name="Klori">Kalori</string>
+    <string name="egzersiz">Egzersiz</string>
+    <string name="dakka">Dakika</string>
+    <string name="Şınav">Şınav 40sn</string>
+
+</resources>

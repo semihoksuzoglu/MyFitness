@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/isimSoyisimProfile"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:background="#99D34848"
+        android:drawableLeft="@drawable/ic_action_person"
+        android:elevation="10dp"
+        android:ems="10"
+        android:hint="   İsim Soyisim"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/dogumTarihiLahought"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/isimSoyisimProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/dayicon"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/dayicon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/dogumTarihiProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="Doğum Tarihi"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="16sp"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/kiloProfile"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/dogumTarihiLahought"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
+        android:background="#99CFCF20"
+        android:drawableLeft="@drawable/weihticon"
+        android:ems="10"
+        android:hint="   Kilo"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/boyProfile"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/kiloProfile"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
+        android:background="#993EA507"
+        android:drawableLeft="@drawable/ic_action_size"
+        android:ems="10"
+        android:hint="   Boy"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/hedefLayouth"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/boyProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
+        android:background="#99DA0303"
+        android:drawableLeft="@drawable/weihticon">
+
+        <ImageView
+            android:id="@+id/goalicon"
+            android:layout_width="26dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ic_action_hedef" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/hedefDegisSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:overlapAnchor="false"
+                android:paddingTop="7dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/sifreProfile"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/hedefLayouth"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
+        android:background="#990C329A"
+        android:drawableLeft="@drawable/ic_action_pass2"
+        android:ems="10"
+        android:hint="   Şifre"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/sifreTekrarProfile"
+        android:layout_width="252dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/sifreProfile"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
+        android:background="#990C329A"
+        android:drawableLeft="@drawable/ic_action_pass2"
+        android:ems="10"
+        android:hint="   Şifre Tekrar"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/GuncelleButton"
+        android:layout_width="154dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/sifreTekrarProfile"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="21dp"
+        android:background="@color/colorBlack"
+        android:elevation="10dp"
+        android:text="Güncelle"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/CikisYapBtn"
+        android:layout_width="159dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/sifreTekrarProfile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="27dp"
+        android:layout_toEndOf="@+id/KayitOlBtn"
+        android:background="@color/colorBlack"
+        android:elevation="10dp"
+        android:text="Çıkış Yap"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--
+
+
+
+
+ -->
+</RelativeLayout>
